@@ -68,7 +68,9 @@
                     ($scope.GioiTinh =="Men" || $scope.GioiTinh =="Women" ) && 
                     ($scope.Reading || $scope.Travel || $scope.Foods || $scope.Music || $scope.Khac) && 
                     $scope.QuocTich != ""){
-                        alert("Đăng kí thành công"); }
+                        alert("Đăng kí thành công"); 
+                        DangKi.reset();
+                }
                 else{ alert("Đăng kí không thành công"); }
             } 
         });
